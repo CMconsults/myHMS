@@ -24,7 +24,7 @@
 
     $.ajax({
       method: 'GET',
-      url: `http://https://my-json-server.typicode.com/CMconsults/mytest/patients?cardnumber=${cardnumber}`,
+      url: `https://my-json-server.typicode.com/CMconsults/mytest/patients?cardnumber=${cardnumber}`,
       data: {
         cardnumber,
       },
@@ -38,7 +38,7 @@
           //Submit the user data if the user does not exist
           $.ajax({
             method: 'POST',
-            url: 'http://https://my-json-server.typicode.com/CMconsults/mytest/patients',
+            url: 'https://my-json-server.typicode.com/CMconsults/mytest/patients',
             data: {
               surname,
               othername,
@@ -81,7 +81,7 @@
     //Check if the user is in the database
     $.ajax({
       method: 'GET',
-      url: `http://https://my-json-server.typicode.com/CMconsults/mytest/users?email=${emailLogin}&password=${passwordLogin}`,
+      url: `https://my-json-server.typicode.com/CMconsults/mytest/users?email=${emailLogin}&password=${passwordLogin}`,
       data: {
         email: emailLogin,
         password: passwordLogin,
@@ -121,7 +121,7 @@
 
     $.ajax({
       method: 'GET',
-      url: `http://https://my-json-server.typicode.com/CMconsults/mytest/patients`,
+      url: `https://my-json-server.typicode.com/CMconsults/mytest/patients`,
 
       success: function (response) {
 
@@ -167,7 +167,7 @@
 
       $.ajax({
         method: 'GET',
-        url: `http://https://my-json-server.typicode.com/CMconsults/mytest/patients?cardnumber=${$(this).data('cardnumber')}`,
+        url: `https://my-json-server.typicode.com/CMconsults/mytest/patients?cardnumber=${$(this).data('cardnumber')}`,
         success: function (res) {
           
           updateForm(res[0]);
@@ -179,7 +179,7 @@
     } else if ($(this).data('target') == '#view') {
       $.ajax({
         method: 'GET',
-        url: `http://https://my-json-server.typicode.com/CMconsults/mytest/patients?cardnumber=${$(this).data('cardnumber')}`,
+        url: `https://my-json-server.typicode.com/CMconsults/mytest/patients?cardnumber=${$(this).data('cardnumber')}`,
         success: function (res) {
           
           updateView(res[0]);
@@ -208,7 +208,7 @@
     e.preventDefault();
     
     $.ajax({
-      url: `http://https://my-json-server.typicode.com/CMconsults/mytest/patients/${$(this).data('id')}`,
+      url: `https://my-json-server.typicode.com/CMconsults/mytest/patients/${$(this).data('id')}`,
       method: 'PATCH',
       data: $('form[name="update"]').serialize(), // It is used in form controls like <input>, <textarea>, <select> etc. It serializes the form values so that its serialized values can be used in the URL query string while making an AJAX request.
       success: function (params) {
@@ -238,7 +238,7 @@
   // Show all the data in the database
   $.ajax({
     method: 'GET',
-    url: `http://https://my-json-server.typicode.com/CMconsults/mytest/patients`,
+    url: `https://my-json-server.typicode.com/CMconsults/mytest/patients`,
 
     success: function (response) {
 
@@ -271,7 +271,7 @@
   $(".delete-info").click(function (e) {
     e.preventDefault();
     $.ajax({
-      url: `http://https://my-json-server.typicode.com/CMconsults/mytest/patients/${$(this).data("id")}`,
+      url: `https://my-json-server.typicode.com/CMconsults/mytest/patients/${$(this).data("id")}`,
       method: 'DELETE',
       success: function () {
         alert("Patient's record has been deleted");
