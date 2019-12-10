@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>3H Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template-->
+  <link href="css/admin.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/addNew.css">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand  static-top nav-color-top">
+
+    <a class="navbar-brand mr-1 nav-color" href="index.html">Healing Hands Hospital</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <!-- <i class="fas fa-bars"></i> -->
+    </button>
+
+
+
+    <!-- Navbar -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle nav-color" href="index.html"
+          aria-haspopup="true" aria-expanded="false">
+          Logout
+
+        </a>
+
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav nav-color">
+      <li class="nav-item">
+        <a class="nav-link" href="./addNew.html">
+          <i class="fa fa-user-plus"></i>
+          <span class="nav-color">Add New Patient</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="./findPatient.html">
+          <i class="fa fa-search"></i>
+          <span class="nav-color">Find Patient</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./allPatient.html">
+          <i class="fa fa-users"></i>
+          <span class="nav-color">View All Patient</span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="./checkin.html">
+            <i class="fa fa-calendar"></i>
+            <span class="nav-color">Checkin Patient</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./patientcheckedin.html">
+              <i class="fa fa-info"></i>
+              <span class="nav-color">Patients Checkedin</span></a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./checkinouthistory.html">
+              <i class="fa fa-history"></i>
+              <span class="nav-color">Checkin & Checkout History</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./patienthistory.html">
+              <i class="fa fa-book"></i>
+              <span class="nav-color">Patient History</span></a>
+          </li>
+         
+    </ul>
+    <!-- This is where the main features are inserted -->
+    <div id="content-wrapper">
+        <div class="container-fluid">
+          <h1 class="text-center">Patients Checkedin</h1>
+          <div>
+                <form class="searchForm">
+                        <div class="form-group">
+                          <label>
+                            <h2>Enter Patient Information</h2>
+                          </label>
+                          <input type="text" class="form-control" id="searchInput" aria-describedby="emailHelp"
+                            placeholder="Enter Patients' Card Number">
+                        </div>
+              
+                        <button type="submit" class="btn btn-primary text-center">Search Patient</button>
+                        <p class="searchMessageCheckedin"></p>
+                      </form>
+              
+            <!--All patient list goes here -->
+            <div class="container">
+              <div class="row">
+  
+  
+                <div class="col-md-12">
+                  <!-- <h4>Bootstrap Snipp for Datatable</h4> -->
+                  <div class="table-responsive">
+  
+  
+                    <table id="mytable" class="table table-bordred table-striped">
+  
+                      <thead>
+  
+                        <th>Card Number</th>
+                        <th>Surname</th>
+                        <th>Other Names</th>                      
+                        <th>Checkin Time</th>
+                        <th>Checkout</th>
+  
+                        
+                        
+                      </thead>
+                      <tbody class="outputTableCheckedin">
+  
+  
+                      </tbody>
+  
+  
+                    </table>
+  
+  
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+
+  <!-- Sticky Footer -->
+  <footer class="sticky-footer">
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>© Copyright Decagon Bootcamp Project by Meshach ADERELE</span>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/form.js"></script>
+  <script src="/js/jquery.js"></script>
+
+</body>
+
+</html>

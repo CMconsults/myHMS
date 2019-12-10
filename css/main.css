@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+}
+
+.navbar{
+    background-color:transparent;
+    color: white;
+}
+
+
+
+span.navbar-toggler-icon{
+    border-color: white; 
+    /* background-color: white; */
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: white;
+}
+
+
+.navbar-light .navbar-toggler{
+    color: white;
+}
+/* .navHero{
+    background-color: black;
+    
+} */
+
+#particles-js{
+    height: 100%;
+    background: url(/images/nurse2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1.big-text{
+    color: white;
+    margin: 100px 0 50px 0;
+}
+
+
+/* .navbar-nav li a{
+    color: white;
+} */
+
+/* .navbar-toggler-icon{
+    color: red;
+} */
+
+.about-us{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+hr{
+    width: 70px;
+    border-width: 2.5px; 
+    border-color: black;
+    margin-top: 3px;
+}
+
+.about-us p{
+    width: 100%;
+    
+    
+}
+
+.contact-us{
+    margin-top: 80px;
+    background-color: #019BC1;
+    padding: 30px 0 70px 0;
+    /* transform: skewY(5deg); */
+    color: white;
+    
+    left: 0;
+    right: 0;
+}
+
+.btnContact{
+    display: inline;
+    
+    
+}
+
+.contact-divider{
+    border-color: white;
+}
+
+footer{
+    /* background-color: #F7F7F7; */
+    margin: 30px 0 0 0;
+}

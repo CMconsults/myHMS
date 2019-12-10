@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "email": "admin@healinghandshospital.com",
+      "password": "decagonhq",
+      "id": 1
+    }
+  ],
+  "patients": [
+    {
+      "surname": "Ayotunde",
+      "othername": "Soyinka",
+      "emailaddress": "soyinka.ayo@gmail.com",
+      "dob": "1933-02-16",
+      "phonenumber": "08132567810",
+      "presentaddress": "tiamiyu street",
+      "permanentaddress": "Lagos, Maryland",
+      "cardnumber": "2023",
+      "id": 4
+    },
+    {
+      "surname": "Smith",
+      "othername": "Wigglesworth",
+      "emailaddress": "smithwiggle@yahoo.com",
+      "dob": "1940-12-31",
+      "phonenumber": "08133445367",
+      "presentaddress": "Oshodi, Texas",
+      "permanentaddress": "Texas City",
+      "cardnumber": "2024",
+      "id": 5
+    },
+    {
+      "surname": "Kenneth",
+      "othername": "Kolade",
+      "emailaddress": "Kennethkol@gmail.com",
+      "dob": "1953-05-14",
+      "phonenumber": "09073462173",
+      "presentaddress": "Kansas, mainland",
+      "permanentaddress": "Kansax Town",
+      "cardnumber": "2025",
+      "id": 6,
+      "email": "Kennethkol@gmail.com"
+    },
+    {
+      "surname": "MESHACH",
+      "othername": "ade",
+      "emailaddress": "Cmconsults2016@gmail.com",
+      "dob": "1998-04-04",
+      "phonenumber": "6306599213",
+      "presentaddress": "4605 Steele Street",
+      "permanentaddress": "kaduna",
+      "cardnumber": "2045",
+      "id": 7
+    },
+    {
+      "surname": "Adewumih",
+      "othername": "Ednut",
+      "emailaddress": "alade@gmail.com",
+      "dob": "1994-02-22",
+      "phonenumber": "05050505050",
+      "presentaddress": "wakt street",
+      "permanentaddress": "lompiy lane 3",
+      "cardnumber": "2026",
+      "id": 8
+    }
+  ],
+  "appointments": []
+}

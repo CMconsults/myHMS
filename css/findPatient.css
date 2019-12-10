@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+body{
+    font-family: Raleway, sans-serif;
+}
+
+
+.viewright{
+    float: right;
+    padding-right: 50px;
+    font-weight: bold;
+}
